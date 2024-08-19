@@ -41,26 +41,32 @@ form {
 .main--flex {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
 
 }
 
 .main--flex h1{
-    padding: 50px;
+    padding: 20px !important;
 }
 .main--flex section{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
+    align-items: center;  
 }
 
-.main--flex section p{
+.main--flex section img {
+    width: 90vw;
+}
+
+.main--flex section article {
+    width: 90vw;
+    padding: 20px !important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
+    align-items: center;    
+}
+
+.main--flex section article p {
+    padding: 5px !important;
 }
