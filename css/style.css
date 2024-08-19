@@ -70,3 +70,48 @@ form {
 .main--flex section article p {
     padding: 5px !important;
 }
+
+.main--grid {          
+    padding: 20px !important;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 333px 333px 333px ;
+    grid-template-rows: 1fr 222px 222px;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "cliente-1 cliente-2 cliente-3"
+    "cliente-4 cliente-5 cliente-6"
+    ;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.main--grid h1 {
+    grid-area: titulo;    
+}
+
+.cliente-1 {
+    grid-area: cliente-1;
+}
+
+.cliente-2 {
+    grid-area: cliente-2;
+}
+
+.cliente-3 {
+    grid-area: cliente-3;
+}
+.cliente-4 {
+    grid-area: cliente-4;
+}
+.cliente-5 {
+    grid-area: cliente-5;
+}
+.cliente-6 {
+    grid-area: cliente-6;
+}
+
+.main--grid section {
+    background-color: aqua;
+}
