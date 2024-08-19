@@ -2,85 +2,117 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/home.css">
-    <title>Contact</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contáctanos</title>
 </head>
 <body>
-    <header>
-        <h1 id="sitioLogo">
-            <a href="../index.html"><img src="../assets/images/logo_141x68.png" alt="plus45"></a>
-        </h1>
-        <nav id="navPrincipal">
-            <ul class="menuPrincipal">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-                <li><a href="./services.html">Servicios</a></li>
-                <li><a href="./clients.html">Clientes</a></li>
-                <li><a id="mySelf" href="./contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <nav id="navSecundario"> 
-            <ul class="menuSecundario">
-                <li><a href="./services.html"><img src="../assets/images/Crea_108x15.png" alt="crea tu web"></a></li>
-                <li><a href="../index.html"><img src="../assets/images/logo_user_25x25.png" alt="user"></a></li>
-             
+    <header class="container-fluid bg-primary-subtle sticky-top " >
+        <div class="row h-100">
+            <div class="col-xl-2 col-4 align-self-center">
+                <a href="../index.html" ><img src="../assets/images/logo_141x68.png" class="img-fluid" alt="plus45"></a>
+                
+            </div>
+            <nav class="col-xl-7 align-self-center d-none d-xl-block">                       
+                <ul class="nav justify-content-evenly"> 
+                    <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="../index.html">Inicio</a></button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="../pages/about.html">Nosotros</a></li>
+                    <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="../pages/services.html">Servicios</a></li>
+                    <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="../pages/clients.html">Clientes</a></li>
+                    <li class="nav-item"><button type="button" class="btn btn-outline-primary p-1"><a class="nav-link" href="../pages/contact.html">Contacto</a></li>
+                </ul>               
+            </nav>
+            <div class="col-xl-3 col-8">
+                <nav class="row"> 
+                    <ul class=" nav flex-nowrap p-xl-3 p-2 nav justify-content-end">
+                        <li class="p-1 nav-item"> <a class="nav-link" href="./services.html"><img src="../assets/images/Crea_108x15.png" class="img-fluid" alt="crea tu web"></a></li>
+                        <li class="p-1 nav-item"> <a class="nav-link" href="../index.html"><img src="../assets/images/logo_user_25x25.png" class="img-fluid" alt="user"></a></li>     
+                    </ul>
+                </nav>
+                <div class="row" >
+                    <nav class="col d-xl-none  px-4 nav justify-content-end">                        
+                        <div class="dropdown">                        
+                            <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/images/barras_25x20.png" class="img-fluid" alt="menu">
+                              </button>                   
+                            <ul class="dropdown-menu">
+                                <li class="nav-item text-center"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                <li class="nav-item text-center"><a  class="nav-link" href="./about.html">Nosotros</a></li>
+                                <li class="nav-item text-center"><a class="nav-link" href="./services.html">Servicios</a></li>
+                                <li class="nav-item text-center"><a class="nav-link" href="./clients.html">Clientes</a></li>
+                                <li class="nav-item text-center"><a class="nav-link" href="./contact.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </nav>                    
+                </div>
+            </div>
             
-            </ul>
-        </nav>
+        </div>
     </header>
-    <main>
-        <h1>Contáctanos</h1>
+    <main class="px-5 py-4 container-fluid">
         
-        <section>
-            <fieldset>
-               
-                <form action="" method="post">
-                    <img src="" alt="nombre">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre">
-    
-                    <img src="" alt="mail">
-                    <label for="mail">Email</label>
-                    <input type="email" id="mail">
-    
-                    <img src="" alt="tel">
-                    <label for="tel">Teléfono</label>
-                    <input type="text" id="tel">
-    
-                    <label for="consulta">Consulta</label>
-                    <textarea name="" id="consulta"></textarea>
-
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Cancelar">
+        <div class="row">
+            <h1 class="col-12 text-center">Contáctanos</h1>            
+        </div>
+       
+        <section class="row justify-content-center align-items-center bg-warning-subtle">            
+            <div class="p-4 col-xl-6 col-12 ">                
+                <form action="" method="post" class="form p-5">
+                    <div class="mb-3">
+                        <img src="../assets/images/nombre_20x20.png" alt="nombre">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
                     
-                </form>
-            </fieldset>                      
-        </section>
-        <section>
-            <div>
-                <img src="" alt="ubicación">
-            </div>
-            <div>
-                <p><img src="" alt="tel">999 99 99 99</p>
-                <p><img src="" alt="mail"> info@plus45.uy</p>
-            </div>
+                    <div class="mb-3">    
+                        <img src="../assets/images/mail_20x20.png" alt="mail">
+                        <label for="mail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp">
+                    </div>   
+                    
+                    <div class="mb-3">    
+                        <img src="../assets/images/tel_20x20.png" alt="tel">
+                        <label for="tel" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="tel">
+                    </div> 
 
+                    <div class="mb-3">    
+                        <label for="consulta" class="form-label">Consulta</label>
+                        <textarea name="" class="form-control" id="consulta"></textarea>
+                    </div>          
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="reset" class="btn btn-primary">Cancelar</button>                                       
+                </form>
+            </div>   
+            
+            <div class="p-4 col-xl-6 col-12">
+                <div class="row">
+                    <img src="../assets/images/mapa_922x540.jpg" class="col-12 img-fluid rounded" alt="ubicación">
+                </div>
+                <div class="row justify-content-around datos-contacto">
+                    <p class="p-1 col-xl-10 col-6 "><img src="../assets/images/tel_20x20.png" alt="tel">099 99 99 99</p>
+                    <p class="p-1 col-xl-10 col-6 "><img src="../assets/images/mail_20x20.png" alt="mail"> info@plus45.uy</p>
+                </div>                
+            </div>   
         </section>        
     </main>
-    <footer>
-        <nav id="navFooter">
-            <ul class="menuFooter">
-                <li><a href="../index.html"><img src="../assets/images/contacto_w_54x50.png" alt="WhatsApp"></a></li>
-                <li><a href="../index.html"><img src="../assets/images/contacto_f_54x50.png" alt="Facebook"></a></li>
-                <li><a href="../index.html"><img src="../assets/images/contacto_in_54x50.png" alt="LinkedIn"></a></li>
-                <li><a href="../index.html"><img src="../assets/images/contacto_i_54x50.png" alt="Instagram"></a></li>
-            </ul>
-        </nav>
-        <div class="copyright">
-            <p>Copyright©2024plus45.uy</p>
+    <footer class="container-fluid bg-primary-subtle">
+        <div class="row  align-items-center h-100">
+            <nav class="col-xl-2 col-6">
+                <ul class="nav flex-nowrap">
+                    <li class="nav-item h-100 d-inline-block"><a class="nav-link" href="../index.html"><img  src="../assets/images/contacto_w_54x50.png" class="img-fluid" alt="WhatsApp"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><img  src="../assets/images/contacto_f_54x50.png" class="img-fluid" alt="Facebook"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><img  src="../assets/images/contacto_in_54x50.png" class="img-fluid" alt="LinkedIn"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html"><img  src="../assets/images/contacto_i_54x50.png" class="img-fluid" alt="Instagram"></a></li>
+                </ul>
+            </nav>
+            <div class="col-xl-10 col-6">
+                <p class="p-2 text-end ">Copyright©2024plus45.uy</p>
+            </div>
         </div>
     </footer>
+    <script src="../scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
